@@ -21,7 +21,7 @@ namespace ConsoleApp2
             int mode = int.Parse(Console.ReadLine());
             Console.WriteLine("key: "+args[0]);
             string s = args[0];
-            if(s.Length>17 || s.Length==0)
+            if(s.Length>16 || s.Length==0)
             {
                 Console.WriteLine("Too looooooooooooong! (or short)");
                 Environment.Exit(0);
@@ -29,7 +29,7 @@ namespace ConsoleApp2
             byte[] key = System.Text.Encoding.ASCII.GetBytes(s);
             Console.WriteLine("vector: "+args[1]);
             s = args[1];
-            if (s.Length > 17 || s.Length == 0)
+            if (s.Length > 16 || s.Length == 0)
             {
                 Console.WriteLine("Too looooooooooooong! (or short)");
                 Environment.Exit(0);
